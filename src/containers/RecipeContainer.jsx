@@ -1,6 +1,7 @@
 'use client'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
+import RecipeDetail from '@/components/RecipeDetail'
 
 const RecipeContainer = ({id}) => {
   
@@ -27,6 +28,7 @@ const RecipeContainer = ({id}) => {
   
   return (
     <div>
+        <RecipeDetail {...item}/>
       <h1>{item.name}</h1>
       {notFound && <div><h2>Not Found</h2></div>}
       {loading && "Loading...."}
