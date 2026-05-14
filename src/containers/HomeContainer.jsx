@@ -42,7 +42,6 @@ const handleGetItems = async () => {
     <div>
     <section>
       <Hero/>
-       
       
       {!loading && <><PopularGrid popuInfo={popularInfo} popuInfoApi={popularRecipes}/> <CardsGrid items={items} /> </>}
       
@@ -64,6 +63,3 @@ const popularInfo = [
   
 ]
 
-//name: "Mango Salsa Chicken",
-//name: "Quinoa Salad with Avocado",
-//name: "Tomato Basil Bruschetta",
